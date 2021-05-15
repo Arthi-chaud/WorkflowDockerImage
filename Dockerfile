@@ -1,8 +1,8 @@
-FROM fedora
+FROM debian
 
 COPY . .
 
-RUN dnf install -y gcc make gdb cmake gcovr build-essential valgrind uuid-dev
+RUN apt update && apt install -y gcc make cmake gcovr build-essential valgrind uuid-dev
 
 WORKDIR /
 
