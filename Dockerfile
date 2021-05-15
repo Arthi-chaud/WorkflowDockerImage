@@ -13,8 +13,7 @@ RUN apt update && apt install -y \
     SFML.x86_64         \
     SFML-devel.x86_64   \
     ncurses-devel.x86_64\
-    ncurses-libs        \
-    ncurses.x86_64
+    ncurses-libs
 
 WORKDIR /
 
