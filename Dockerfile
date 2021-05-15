@@ -18,4 +18,5 @@ RUN apt update && apt install -y \
 
 WORKDIR /
 
-CMD ./install_criterion.sh && ./build_sfml.sh
+RUN ./install_criterion.sh
+RUN ./build_sfml.sh
