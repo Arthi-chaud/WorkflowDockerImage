@@ -14,6 +14,7 @@ RUN apt update && apt install -y \
     gcovr       \
     git         \
     sudo        \
+    python3     \
     build-essential \
     uuid-dev
 
