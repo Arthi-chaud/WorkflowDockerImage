@@ -22,9 +22,9 @@ RUN apt update && apt install -y \
 
 RUN ./install_criterion.sh
 
+RUN git clone https://github.com/Gegel85/norminette.git
+RUN cd norminette && ./install.sh
+
 RUN cd /usr/local/bin \
   && ln -s /usr/bin/python3 python \
   && pip3 install --upgrade pip
-
-RUN git clone https://github.com/Gegel85/norminette.git
-RUN cd norminette && ./install.sh
