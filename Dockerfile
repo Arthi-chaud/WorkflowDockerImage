@@ -20,7 +20,9 @@ RUN apt update && apt install -y \
     build-essential \
     doxygen     \
     graphviz    \
-    uuid-dev
+    uuid-dev    \
+    php         \
+    composer
 
 RUN ./install_criterion.sh
 
