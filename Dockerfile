@@ -24,7 +24,6 @@ RUN apt update && apt install -y \
     php         \
     composer
 
-RUN composer self-update 
 RUN ./install_criterion.sh
 
 RUN git clone https://github.com/Gegel85/norminette.git
